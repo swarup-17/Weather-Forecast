@@ -33,7 +33,7 @@ export const Weather = ({
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                 <circle cx="12" cy="10" r="3"></circle>
               </svg>
-              <h4 className="country-txt">{weatherData.name}</h4>
+              <h4 className="country-txt regular-txt">{weatherData.name}</h4>
             </div>
             <h5 className="current-date-txt regular-txt">{getCurrentDate()}</h5>
           </div>
@@ -47,7 +47,7 @@ export const Weather = ({
               height={150}
             />
             <div className="weather-summary-info">
-              <h1 className="temp-txt">
+              <h1 className="temp-txt regular-txt">
                 {Math.round(weatherData.main.temp)}°C
               </h1>
               <h3 className="condition-txt regular-txt">
@@ -93,7 +93,7 @@ export const Weather = ({
                 <path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path>
               </svg>
               <div className="condition-info">
-                <h5 className="regular-txt">Wind Speed</h5>
+                <h5 className="regular-txt">Wind</h5>
                 <h5 className="wind-value-txt">{weatherData.wind.speed} M/s</h5>
               </div>
             </div>
